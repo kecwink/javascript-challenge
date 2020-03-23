@@ -48,6 +48,8 @@ data.forEach(function(ufoSighting){
         console.log(inputValue)       
             var sightingDate = tableData.filter(tableData => tableData.datetime == inputValue);
             
+            d3.event.preventDefault();
+
             //check the sightDate is properly working
             console.log( sightingDate)
         //populate the ufo table with filtered data
