@@ -38,6 +38,8 @@ data.forEach(function(ufoSighting){
     //select the date-time input with d3
     var datetimeInput = d3.select("#datetime");
 
+    d3.event.preventDefault();
+
     // clean this to select rows that correspond with the given datetime
     // Input fields can trigger a change event when new text is entered.
     datetimeInput.on("change", function() {
@@ -48,7 +50,7 @@ data.forEach(function(ufoSighting){
         console.log(inputValue)       
             var sightingDate = tableData.filter(tableData => tableData.datetime == inputValue);
             
-            d3.event.preventDefault();
+            
 
             //check the sightDate is properly working
             console.log( sightingDate)
