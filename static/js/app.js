@@ -38,7 +38,7 @@ function fillUFOTable(data) {
         //select the date-time input with d3
         var datetimeInput = d3.select("#datetime");
 
-        //d3.event.preventDefault();
+        
 
         // clean this to select rows that correspond with the given datetime
         // Input fields can trigger a change event when new text is entered.
